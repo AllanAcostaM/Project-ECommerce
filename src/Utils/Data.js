@@ -11,7 +11,7 @@ export const ProductData  = [
     },
     {
         Name: 'Caballero Espejo',
-        Price: 165,
+        Price: 166,
         Url: 'Mirror Knight.png'
     },
     {
