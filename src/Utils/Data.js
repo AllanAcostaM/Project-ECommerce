@@ -6,7 +6,7 @@ export const ProductData  = [
     },
     {
         Name: 'Caballero Cebolla',
-        Price: 130,
+        Price: 131,
         Url: 'Onion Knight (Siegmeyer).png'
     },
     {
