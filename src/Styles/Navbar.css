@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:Root {
+    --Silver: #808080;
+    --Orange: #c96725d5;
+    --Black: #303030;
+    --white: #fefefe;
+    --Gray: #808080da;
+    --Brown: #81655088;
+    
+}
+
+.Navbar {
+    width: 100%;
+    height: 100px;
+    background: var(--Silver);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+}
+
+.ContainNavLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HelmetStore {
+    width: 50px;
+    height: 50px;
+}
+
+.NameStore {
+    Color: var(--white);
+    font-size: 24px;
+    margin-top: 15px;
+    text-shadow: 3px 2px var(--Black);
+}
+
+.ContainItems {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+}
+
+.Item {
+    text-align: center;
+    line-height: 35px;
+    list-style: none;
+    padding: 20px 20px;
+    background: var(--Silver);
+}
+
+.Item:hover {
+    cursor: pointer;
+    border-bottom: 3px solid var(--Black);
+    background: rgba(240, 240, 240, 10%);
+    font-weight: bold;
+}
+
+.ShoppingCart {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.CartDeployment {
+    position: relative;
+}
+
+.listCart {
+    position: absolute;
+    z-index: -1;
+    top: -330px;
+    right: 0px;
+    width: 280px;
+    height: 310px;
+    background: var(--Silver);
+    transition: 1s ease-in-out;
+    opacity: 0;
+    border-radius: 0 0 15px 15px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CartDeployment:hover .listCart {
+    opacity: 1;
+    top: 88px;
+    transition: 1s ease-in-out;
+}
+
+.listCartProducts {
+    width: 90%;
+    height: 80px;
+    line-height: 25px;
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    border-bottom: 2px solid var(--Black);
+    position: relative;
+}
+
+.ImgProductList {
+    width: 50px;
+    height: 50px;
+}
+
+.listCartBuy {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    
+    /*flex-direction: column;*/
+    width: 100%;
+    height: 80%;
+}
+
+.listButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.ButtonBuy {
+    width: 80%;
+    height: 40px;
+    background: #4d2500ab;
+    border-radius: 30px;
+    color: #161616;   
+}
+
+.ButtonBuy:hover {
+    box-shadow: 0 0 15px #4d2500ab;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    
+    .Navbar {
+        width: 100%;
+        height: 120px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ContainItems {
+        gap: 10px;
+    }
+
+    .Item {
+        width: 100px;
+        height: 60px;
+        font-size: 15px;
+        padding: 10px 10px;
+    }
+
+    .ShoppingCart {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .listCart {
+        width: 200px;
+        height: 240px;
+        right: 50px;
+    }
+
+    .listCartProducts {
+        flex-direction: column;
+        font-size: 10px;
+        line-height: 15px;
+        gap: 0rem;
+    }
+    
+    .ImgProductList {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .ButtonBuy {
+        width: 80%;
+        height: 30px;
+        color: var(--Black);
+    }
+
+}
+

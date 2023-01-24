@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/Navbar.css">
+    <link rel="stylesheet" href="./src/styles/Header.css">
+    <link rel="stylesheet" href="./src/styles/Products.css">
+    <link rel="stylesheet" href="./src/Styles/Footer.css">
+    <title></title>
+</head>
+<body>
+
+<!-- Navbar -->
+
+    <nav class="Navbar">
+        <figure class="ContainNavLogo">
+            <img class="HelmetStore" src="./Public/Assets/LogosIcons/HelmetKnight.png"> 
+        <div>
+            <h3 class="NameStore"> SOULS STORE </h3> 
+        </div>      
+        </figure>
+        <ul class="ContainItems">
+            <li class="Item">Figuras</li>
+            <li class="Item">Anillos</li>
+            <li class="Item CartDeployment"> <img class="ShoppingCart" src ="./Public/Assets/LogosIcons/CartShopping.png" alt="" >
+                <div class="listCart">
+                    <div class="listCartBuy">
+                        <div class="listCartProducts">
+                            <figure>
+                                <img class="ImgProductList" src="" alt="">
+                            </figure>
+                            <div>
+                                <h3 class="NameProductList">Nombre Producto</h3>
+                                <p class="PriceProductList">Precio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listButton">
+                            <button class="ButtonBuy">Comprar</button>
+                    </div>
+                </div>
+            </li>   
+        </ul>    
+    </nav>
+
+    <!-- HEADER -->
+
+    <header class="Header">
+        <div class="ContainTextHeader">
+            <h1 class="TitleHeader"> SOULS STORE </h1>
+            <p class="ParagraphHeader">Venta de figuras coleccionables, joyas y mucho más.</p>
+            <a class="ButtonViewProducts" href="#">Ver Productos</a>
+        </div>
+    </header>
+
+    <!-- Main (Products)-->
+
+    <main>
+        <article class="TitleF">
+            <h2 class="TitleFigure">Figuras</h2>
+        </article>
+        <section id="ProductsTypeFigures" class="Products">
+                <div class="Card">
+                    <figure class="ContainImgCard">
+                        <img src="" alt="" class="ImgCard" >
+                    </figure>
+                    <h2 class="NameProductCard"></h2>
+                    <div class="ProductPrice">
+                        <p class="PriceCard"></p>
+                        <!--Button in process of fixing-->
+                        <button id="OpenButton" class="ButtonBuyCard">
+                            <img class="BuyCardImg" src="./Public/Assets/LogosIcons/CartShopping.png" alt="">
+                        </button>
+                        <div id="ModalProduct" class="BgModal">
+                            <div class="Modal">
+                                <figure id="CloseButton">
+                                    <img src="./Public/Assets/LogosIcons/X.png" alt="" class="ImgX">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <article class="TitleF">
+            <h2 class="TitleFigure">Anillos</h2>
+        </article>
+        <section id="ProductsTypeRing" class="Products">
+            <div class="Card">
+                <figure class="ContainImgCard">
+                    <img src="" alt="" class="ImgCard" >
+                </figure>
+                <h2 class="NameProductCard"></h2>
+                <div class="ProductPrice">
+                    <p class="PriceCard"></p>
+                    <!--Button in process of fixing-->
+                    <button id="ButtonModal" class="ButtonBuyCard">
+                        <img class="BuyCardImg" src="./Public/Assets/LogosIcons/CartShopping.png" alt="">
+                    </button>
+                    <div id="ModalProduct" class="BgModal">
+                        <div class="Modal">
+                            <figure id="CloseButton">
+                                <img src="./Public/Assets/LogosIcons/X.png" alt="" class="ImgX">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="Footer">
+        <figure class="ContainFooterLogo">
+            <img class="HelmetStoreFooter" src="./Public/Assets/LogosIcons/HelmetKnight.png"> 
+        <div>
+            <h3 class="NameStoreFooter"> SOULS STORE </h3> 
+        </div>      
+        </figure>
+    </footer>
+
+    <script src="src/JS/Main.js" type="module"></script>
+
+</body>
+</html>
